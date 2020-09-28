@@ -293,6 +293,8 @@ namespace SharpShell.ServerRegistration
                     if (serverClassKey == null)
                         return null;
 
+                    var serverClassKeyDefaultValue = GetValueOrEmpty(serverClassKey, null);
+
                     //  Do we have an InProc32 server?
                     using(var inproc32ServerKey = serverClassKey.OpenSubKey(KeyName_InProc32))
                     {
@@ -346,6 +348,27 @@ namespace SharpShell.ServerRegistration
                                                    CodeBase = codeBase != null ? codeBase.ToString() : null,
                                                    IsApproved = serverApproved
                                                };
+                                }
+                            }
+
+                            if (defaultValue.EndsWith(@".comhost.dll"))
+                            {
+                                using (var progIdKey = serverClassKey.OpenSubKey(KeyValue_ProgID))
+                                {
+                                    var progIdDefaultValue = GetValueOrEmpty(progIdKey, null);
+                                    //  If the progID default value is null or empty, we've got a partially registered server.
+                                    if (string.IsNullOrEmpty(defaultValue))
+                                        return new ShellExtensionRegistrationInfo(ServerRegistationType.PartiallyRegistered, serverCLSID);
+
+                                    // CoreCLR COMHost Server
+                                    return new ShellExtensionRegistrationInfo(ServerRegistationType.ManagedInProc32, serverCLSID)
+                                    {
+                                        DisplayName = serverClassKeyDefaultValue,
+                                        ServerPath = defaultValue,
+                                        ThreadingModel = threadingModel,
+                                        Class = progIdDefaultValue,
+                                        IsApproved = serverApproved
+                                    };
                                 }
                             }
 
@@ -880,6 +903,11 @@ throw new PlatformNotSupportedException("Unable to load assembly metadata as the
         /// The value for the net framework servers.
         /// </summary>
         private const string KeyValue_NetFrameworkServer = @"mscoree.dll";
+
+        /// <summary>
+        /// The ProgID key name.
+        /// </summary>
+        private const string KeyValue_ProgID = @"ProgID";
 
         /// <summary>
         /// The threading model key name.
