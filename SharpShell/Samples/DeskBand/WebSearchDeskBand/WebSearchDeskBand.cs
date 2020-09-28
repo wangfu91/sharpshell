@@ -10,6 +10,7 @@ namespace WebSearchDeskBand
     /// <seealso cref="SharpShell.SharpDeskBand.SharpDeskBand" />
     [ComVisible(true)]
     [DisplayName("Web Search")]
+    [Guid("3F8FA992-BB12-4007-BD8E-AD7F6D1D9BA4")]
     public class WebSearchDeskBand : SharpDeskBand
     {
         /// <summary>

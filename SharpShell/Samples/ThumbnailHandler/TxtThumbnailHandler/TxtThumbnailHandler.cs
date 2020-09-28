@@ -18,6 +18,7 @@ namespace TxtThumbnailHandler
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".txt")]
+    [Guid("F137F68B-8503-4F34-9D15-6EAD87582C60")]
     public class TxtThumbnailHandler : SharpThumbnailHandler, IDisposable
     {
         /// <summary>

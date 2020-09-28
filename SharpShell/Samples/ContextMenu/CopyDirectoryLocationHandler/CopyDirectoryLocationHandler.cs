@@ -15,6 +15,7 @@ namespace CopyDirectoryLocationHandler
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.Class, @"Directory\Background")]
+    [Guid("6CFB8620-5808-4575-AD22-EB7A19163E68")]
     public class CopyDirectoryLocationHandler : SharpContextMenu
     {
         /// <summary>

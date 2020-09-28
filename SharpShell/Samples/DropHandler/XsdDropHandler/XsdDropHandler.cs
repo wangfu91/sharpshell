@@ -14,6 +14,7 @@ namespace XsdDropHandler
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".xsd")]
+    [Guid("7140729E-79F1-4180-8B9B-1F398D223AC5")]
     public class XsdDropHandler : SharpDropHandler
     {
         /// <summary>

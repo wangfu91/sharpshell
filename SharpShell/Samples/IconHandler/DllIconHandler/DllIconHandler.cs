@@ -18,6 +18,7 @@ namespace DllIconHandler
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".dll")]
+    [Guid("68107185-88EC-4DBE-8FC0-B4B99BD17EDB")]
     public class DllIconHandler : SharpIconHandler
     {
         /// <summary>

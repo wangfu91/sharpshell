@@ -13,6 +13,7 @@ namespace CopyPathDataHandler
     [DisplayName("Copy Path Data Handler")]
     [COMServerAssociation(AssociationType.Directory)]
     [COMServerAssociation(AssociationType.AllFiles)]
+    [Guid("7CFAC122-A0B1-4299-81F3-4D2AB83585DC")]
     public class CopyPathDataHandler : SharpDataHandler
     {
         /// <summary>

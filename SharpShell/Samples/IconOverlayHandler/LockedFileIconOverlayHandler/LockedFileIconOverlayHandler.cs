@@ -18,6 +18,7 @@ namespace LockedFileIconOverlayHandler
     /// </summary>
     [ComVisible(true)]
     [DisplayName("Locked File Icon Overlay Handler")]
+    [Guid("5D846F39-67EA-41B7-B961-18743C118211")]
     public class LockedFileIconOverlayHandler : SharpIconOverlayHandler
     {
         /// <summary>

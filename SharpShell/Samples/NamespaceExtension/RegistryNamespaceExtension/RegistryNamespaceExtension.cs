@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Messaging;
 using Microsoft.Win32;
 using SharpShell.SharpNamespaceExtension;
 
@@ -14,6 +13,7 @@ namespace RegistryNamespaceExtension
     /// </summary>
     [ComVisible(true)]
     [NamespaceExtensionJunctionPoint(NamespaceExtensionAvailability.Everyone, VirtualFolder.MyComputer, "Registry")]
+    [Guid("F1800DFD-BAFE-4D30-B3B7-6F3CB06D7595")]
     public class RegistryNamespaceExtension : SharpNamespaceExtension
     {
         /// <summary>

@@ -16,6 +16,7 @@ namespace ResourcesPropertySheet
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".dll", ".exe")]
+    [Guid("AA9B8D74-7CDF-4D9E-8618-4C8B21E22AAB")]
     public class ResourcesPropertySheet : SharpPropertySheet
     {
         /// <summary>

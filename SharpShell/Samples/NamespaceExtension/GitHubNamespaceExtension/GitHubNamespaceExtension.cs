@@ -15,6 +15,7 @@ namespace GitHubNamespaceExtension
     /// </summary>
     [ComVisible(true)]
     [NamespaceExtensionJunctionPoint(NamespaceExtensionAvailability.Everyone, VirtualFolder.Desktop, "GitHub")]
+    [Guid("E0C9A918-91ED-4D77-AD90-251B3EEFEB2A")]
     public class GitHubNamespaceExtension : SharpNamespaceExtension, IShellNamespaceFolderContextMenuProvider
     {
         private readonly IShellNamespaceItem[] sampleRepos = new IShellNamespaceItem[]

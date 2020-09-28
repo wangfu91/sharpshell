@@ -12,6 +12,7 @@ namespace FileTimesPropertySheet
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.AllFiles)]
+    [Guid("87D5BB51-21D5-489A-8D93-9C58E958FDAD")]
     public class FileTimesPropertySheet : SharpPropertySheet
     {
         /// <summary>

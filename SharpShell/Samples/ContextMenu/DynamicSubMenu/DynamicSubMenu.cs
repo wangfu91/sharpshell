@@ -18,6 +18,7 @@ namespace DynamicSubMenus
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.AllFiles)]
     [COMServerAssociation(AssociationType.Directory)]
+    [Guid("56A7F90B-99AE-4B54-AE65-E7753452F28D")]
     public class DynamicSubMenuExtension : SharpContextMenu
     {
         //  lets create the menu strip.

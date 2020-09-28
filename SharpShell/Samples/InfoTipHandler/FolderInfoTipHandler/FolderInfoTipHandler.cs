@@ -15,6 +15,7 @@ namespace FolderInfoTipHandler
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.Directory)]
+    [Guid("18496AC4-B3C2-4257-BA9C-B1E9B35C05A9")]
     public class FolderInfoTipHandler : SharpInfoTipHandler
     {
         /// <summary>

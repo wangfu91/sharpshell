@@ -16,6 +16,7 @@ namespace ReadOnlyFileIconOverlayHandler
     /// </summary>
     [ComVisible(true)]
     [RegistrationName("  ReadOnlyFileIconOverlayHandler")] // push our way up the list by putting spaces in the name...
+    [Guid("18496AC4-B3C2-4257-BA9C-B1E9B35C05A9")]
     public class ReadOnlyFileIconOverlayHandler : SharpIconOverlayHandler
     {
         /// <summary>

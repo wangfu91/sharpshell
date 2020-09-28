@@ -7,6 +7,7 @@ namespace EnvironmentVariablesNamespaceExtension
 {
     [ComVisible(true)]
     [NamespaceExtensionJunctionPoint(NamespaceExtensionAvailability.Everyone, VirtualFolder.MyComputer, "Environment Variables")]
+    [Guid("D83BA237-4F1D-4B9C-9981-47512CBA51D2")]
     public class EnvironmentVariablesNamespaceExtension : SharpNamespaceExtension
     {
         public override NamespaceExtensionRegistrationSettings GetRegistrationSettings()

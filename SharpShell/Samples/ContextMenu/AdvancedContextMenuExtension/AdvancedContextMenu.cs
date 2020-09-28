@@ -18,6 +18,7 @@ namespace AdvancedContextMenuExtension
     /// </summary>
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.AllFiles)]
+    [Guid("1CF8E4AE-6FBD-427C-A341-E6223EFC0577")]
     public class AdvancedContextMenu : SharpContextMenu
     {
         /// <summary>
