@@ -38,6 +38,9 @@ namespace ServerManager
             if (Properties.Settings.Default.RecentlyUsedFiles == null)
                 Properties.Settings.Default.RecentlyUsedFiles = new StringCollection();
 
+
+            serverDetailsView1 = new ServerDetails.ServerDetailsView();
+
             //  Set initial UI command state.
             UpdateUserInterfaceCommands();
         }
